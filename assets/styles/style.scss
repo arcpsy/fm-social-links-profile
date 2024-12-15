@@ -110,8 +110,10 @@ footer {
 
 .attribution {
    font-size: rem(11);
-   text-align: center;
    color: $text-light;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
    &__link {
       color: $footer-link;

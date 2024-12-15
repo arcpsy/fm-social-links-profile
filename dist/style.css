@@ -92,8 +92,10 @@ footer {
 
 .attribution {
   font-size: 0.6875rem;
-  text-align: center;
   color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .attribution__link {
   color: hsl(228, 45%, 44%);
