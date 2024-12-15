@@ -42,10 +42,10 @@ footer {
    align-items: center;
    padding: rem(40);
    border-radius: rem(10);
+   margin: rem(24);
 
-   @media (max-width: 40em) {
-      width: rem(375);
-      padding: rem(32);
+   @media (max-width: rem(440)) {
+      padding: rem(24);
    }
 }
 

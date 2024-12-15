@@ -29,11 +29,11 @@ footer {
   align-items: center;
   padding: 2.5rem;
   border-radius: 0.625rem;
+  margin: 1.5rem;
 }
-@media (max-width: 40em) {
+@media (max-width: 27.5rem) {
   .profile-card {
-    width: 23.4375rem;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 }
 
