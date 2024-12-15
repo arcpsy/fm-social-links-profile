@@ -12,7 +12,9 @@ $footer-link: hsl(228, 45%, 44%);
    @return $px / 16 + rem;
 }
 
-* {
+*,
+*::before,
+*::after {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
