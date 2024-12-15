@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+$dark-bg: hsl(0, 0%, 8%);
+$card-bg: hsl(0, 0%, 12%);
+$text-light: hsl(0, 0%, 100%);
+$highlight: hsl(75, 94%, 57%);
+$button-bg: hsl(0, 0%, 20%);
+$button-hover-bg: $highlight;
+$footer-link: hsl(228, 45%, 44%);
+
+@function rem($px) {
+   @return $px / 16 + rem;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Inter", sans-serif;
+   background-color: $dark-bg;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100dvh;
+}
+
+.profile-card {
+   background-color: $card-bg;
+   width: rem(400);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: rem(40);
+   border-radius: rem(10);
+
+   @media (max-width: 40em) {
+      width: rem(375);
+      padding: rem(32);
+   }
+}
+
+.profile {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+
+   &__image {
+      border-radius: 100vmax;
+      height: rem(100);
+      margin-bottom: rem(24);
+   }
+
+   &__name {
+      font-size: rem(24);
+      font-weight: 400;
+      color: $text-light;
+      margin-bottom: rem(8);
+   }
+
+   &__location {
+      font-size: rem(14);
+      font-weight: 600;
+      color: $highlight;
+   }
+
+   &__bio {
+      font-size: rem(14);
+      color: $text-light;
+      margin-block: rem(32);
+   }
+}
+
+.social-links {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: rem(16);
+   width: 100%;
+
+   &__button {
+      background-color: $button-bg;
+      color: $text-light;
+      font-size: rem(14);
+      font-weight: 600;
+      padding: rem(16) rem(16);
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      border-radius: rem(10);
+      transition: all 0.3s ease;
+
+      &:hover {
+         background-color: $button-hover-bg;
+         color: $button-bg;
+         font-weight: 700;
+      }
+   }
+}
+
+.attribution {
+   font-size: rem(11);
+   text-align: center;
+
+   &__link {
+      color: $footer-link;
+   }
+}
