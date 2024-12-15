@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --8px: 0.5rem;
+   --14px: 0.875rem;
+   --16px: 1rem;
+   --24px: 1.5rem;
+   --32px: 2rem;
+   --40px: 2.5rem;
+   --100px: 6.25rem;
+   --375px: 23.4375rem;
+   --400px: 25rem;
+   --632px: 39.5rem;
+   --650px: 40.625rem;
+}
+
+body {
+   font-family: "Inter", sans-serif;
+   background-color: hsl(0, 0%, 8%);
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100dvh;
+}
+
+.profile-card {
+   background-color: hsl(0, 0%, 12%);
+   width: var(--400px);
+   height: var(--650px);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding: var(--40px);
+   border-radius: 10px;
+}
+
+@media (max-width: 40em) {
+   .profile-card {
+      width: var(--375px);
+      height: var(--632px);
+      padding: var(--32px);
+   }
+}
+
+.profile-card__image {
+   border-radius: 100vmax;
+   height: var(--100px);
+   margin-bottom: var(--24px);
+}
+
+.profile-card__name {
+   font-size: var(--24px);
+   font-weight: 400;
+   color: hsl(0, 0%, 100%);
+   margin-bottom: var(--8px);
+}
+
+.profile-card__location {
+   font-size: var(--14px);
+   font-weight: 600;
+   color: hsl(75, 94%, 57%);
+}
+
+.profile-card__bio {
+   font-size: var(--14px);
+   color: hsl(0, 0%, 100%);
+   margin-block: var(--32px);
+}
+
+.social-links {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: var(--16px);
+   width: 100%;
+}
+
+.social-links__button {
+   background-color: hsl(0, 0%, 20%);
+   color: hsl(0, 0%, 100%);
+   font-size: var(--14px);
+   font-weight: 600;
+   padding: var(--16px) 1rem;
+   width: 100%;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 7px;
+}
+
+.social-links__button:hover {
+   background-color: hsl(75, 94%, 57%);
+   color: hsl(0, 0%, 20%);
+   font-weight: 700;
+}
+
+.footer__attribution {
+   font-size: 11px;
+   text-align: center;
+}
+
+.footer__link {
+   color: hsl(228, 45%, 44%);
+}
