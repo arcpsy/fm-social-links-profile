@@ -30,6 +30,10 @@ main {
    height: 100dvh;
 }
 
+footer {
+   height: rem(20);
+}
+
 .profile-card {
    background-color: $card-bg;
    width: rem(400);

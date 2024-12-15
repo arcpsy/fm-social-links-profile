@@ -17,6 +17,10 @@ main {
   height: 100dvh;
 }
 
+footer {
+  height: 1.25rem;
+}
+
 .profile-card {
   background-color: hsl(0, 0%, 12%);
   width: 25rem;
